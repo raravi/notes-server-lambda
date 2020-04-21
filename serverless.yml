@@ -1,0 +1,36 @@
+service: notes-server-lambda
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+custom:
+  secrets: ${file(secrets.json)}
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${self:custom.secrets.NODE_ENV}
+  region: eu-central-1
+  environment:
+    NODE_ENV: ${self:custom.secrets.NODE_ENV}
+    DB: ${self:custom.secrets.DB}
+    NOTESAPP_SECRETORKEY: ${self:custom.secrets.NOTESAPP_SECRETORKEY}
+    NOTESAPP_SESSIONSECRET: ${self:custom.secrets.NOTESAPP_SESSIONSECRET}
+    NOTESAPP_EMAIL: ${self:custom.secrets.NOTESAPP_EMAIL}
+    NOTESAPP_PASSWORD: ${self:custom.secrets.NOTESAPP_PASSWORD}
+
+functions:
+  app:
+    handler: server.run
+    events:
+      - http:
+          path: /
+          method: ANY
+          cors: true
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors: true
+
+plugins:
+  - serverless-offline
