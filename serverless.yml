@@ -18,6 +18,8 @@ provider:
     NOTESAPP_SESSIONSECRET: ${self:custom.secrets.NOTESAPP_SESSIONSECRET}
     NOTESAPP_EMAIL: ${self:custom.secrets.NOTESAPP_EMAIL}
     NOTESAPP_PASSWORD: ${self:custom.secrets.NOTESAPP_PASSWORD}
+    NOTESAPP_RESETEMAIL: ${self:custom.secrets.NOTESAPP_RESETEMAIL}
+    NOTESAPP_RESETLINK: ${self:custom.secrets.NOTESAPP_RESETLINK}
 
 functions:
   app:
