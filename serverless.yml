@@ -14,12 +14,13 @@ provider:
   environment:
     NODE_ENV: ${self:custom.secrets.NODE_ENV}
     DB: ${self:custom.secrets.DB}
-    NOTESAPP_SECRETORKEY: ${self:custom.secrets.NOTESAPP_SECRETORKEY}
-    NOTESAPP_SESSIONSECRET: ${self:custom.secrets.NOTESAPP_SESSIONSECRET}
-    NOTESAPP_EMAIL: ${self:custom.secrets.NOTESAPP_EMAIL}
-    NOTESAPP_PASSWORD: ${self:custom.secrets.NOTESAPP_PASSWORD}
-    NOTESAPP_RESETEMAIL: ${self:custom.secrets.NOTESAPP_RESETEMAIL}
-    NOTESAPP_RESETLINK: ${self:custom.secrets.NOTESAPP_RESETLINK}
+    APP_SECRETORKEY: ${self:custom.secrets.APP_SECRETORKEY}
+    APP_SESSIONSECRET: ${self:custom.secrets.APP_SESSIONSECRET}
+    APP_EMAIL: ${self:custom.secrets.APP_EMAIL}
+    APP_PASSWORD: ${self:custom.secrets.APP_PASSWORD}
+    APP_RESETEMAIL: ${self:custom.secrets.APP_RESETEMAIL}
+    APP_RESETLINK: ${self:custom.secrets.APP_RESETLINK}
+    APP_CLIENTURL: ${self:custom.secrets.APP_CLIENTURL}
 
 functions:
   app:
