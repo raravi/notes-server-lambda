@@ -1,4 +1,4 @@
 const serverless = require('serverless-http');
-const app = require('./lib/app');
+const app = require('login-server-express');
 
 module.exports.run = serverless(app);

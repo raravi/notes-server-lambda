@@ -13,7 +13,7 @@ provider:
   region: eu-central-1
   environment:
     NODE_ENV: ${self:custom.secrets.NODE_ENV}
-    DB: ${self:custom.secrets.DB}
+    APP_DB: ${self:custom.secrets.APP_DB}
     APP_SECRETORKEY: ${self:custom.secrets.APP_SECRETORKEY}
     APP_EMAIL: ${self:custom.secrets.APP_EMAIL}
     APP_PASSWORD: ${self:custom.secrets.APP_PASSWORD}
