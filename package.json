@@ -1,6 +1,6 @@
 {
   "name": "notes-server-lambda",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Notes Server on AWS Lambda!",
   "repository": "https://github.com/raravi/notes-server-lambda.git",
   "main": "server.js",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "serverless-http": "^2.3.2",
-    "login-server-express": "^1.0.0"
+    "login-server-express": "^1.1.5"
   },
   "devDependencies": {
     "serverless-offline": "^6.1.4"
