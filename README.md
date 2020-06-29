@@ -29,3 +29,5 @@ You should have a `secrets.json` file to be picked up by the serverless.yml conf
 * **APP_RESETEMAIL**: The Email that is displayed in the 'From' field in the mail sent.
 * **APP_RESETLINK**: Link to reset password. For e.g., https://www.myapp.com/resetpassword
 * **APP_CLIENTURL**: The URL of your Client application which will connect to this server. For e.g., https://www.myapp.com
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y21VCIL)
