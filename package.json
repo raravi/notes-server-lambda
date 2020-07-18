@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "serverless-http": "^2.3.2",
-    "login-server-express": "^1.1.7"
+    "login-server-express": "^1.1.8"
   },
   "devDependencies": {
     "serverless-offline": "^6.1.4"
