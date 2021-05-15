@@ -11,8 +11,8 @@
   "author": "Amith Raravi",
   "license": "MIT",
   "dependencies": {
-    "serverless-http": "^2.3.2",
-    "login-server-express": "^1.1.10"
+    "login-server-express": "^1.1.10",
+    "serverless-http": "^2.3.2"
   },
   "devDependencies": {
     "serverless-offline": "^6.1.4"
