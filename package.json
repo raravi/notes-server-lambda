@@ -5,16 +5,16 @@
   "repository": "https://github.com/raravi/notes-server-lambda.git",
   "main": "server.js",
   "scripts": {
-    "sls-offline": "sls offline start --skipCacheInvalidation --httpPort 4000",
+    "sls-offline": "sls offline start --httpPort 4000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Amith Raravi",
   "license": "MIT",
   "dependencies": {
     "login-server-express": "^1.1.11",
-    "serverless-http": "^2.3.2"
+    "serverless-http": "^3.1.0"
   },
   "devDependencies": {
-    "serverless-offline": "^6.1.4"
+    "serverless-offline": "^11.6.0"
   }
 }
